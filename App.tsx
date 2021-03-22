@@ -6,6 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import { NavigationContainer } from '@react-navigation/native';
 import MainRootStack from './RootStack';
 import SafeViewAndroid from './components/SafeViewAndroid';
+import * as Font from 'expo-font'
 import ReduxThunk from 'redux-thunk';
 import logger from 'redux-logger';
 
@@ -13,8 +14,10 @@ const middleware = applyMiddleware(ReduxThunk, logger);
 
 const store = createStore(reducers, middleware);
 
-export default function App () {
+export default function App() {
+
   return (
+    
     <Provider store={store}>
       <SafeAreaView style={SafeViewAndroid.AndroidSafeArea}>
         <NavigationContainer>

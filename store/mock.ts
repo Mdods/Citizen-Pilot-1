@@ -97,7 +97,7 @@ const news: {}[] = [
   },
 ];
 
-const currentProposals: {}[] = [
+const currentProposal: {}[] = [
   {
     title: 'build more benchs',
     description: 'benchs',
@@ -159,7 +159,7 @@ export {
   report,
   solutionProposals,
   news,
-  currentProposals,
+  currentProposal,
   whatAreWeWorkingOn,
   contacts,
 };
