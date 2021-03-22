@@ -5,10 +5,11 @@ const initialState = {
  currentProposal: currentProposal
 };
 
-export const currentProposals = (state = initialState, action: PayloadAction<string>) => {
+ export const Proposals = (state = initialState, action: PayloadAction<string>) => {
   switch (action.type) {
     case 'currentProposal':
      return state;
   }
   return state;
 };
+

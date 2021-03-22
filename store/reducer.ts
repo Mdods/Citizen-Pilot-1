@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux';
 import { user } from './reducers/user';
-import { currentProposals} from './reducers/currentProposals'
+import {Proposals} from './reducers/currentProposals'
 
 
 // Combining both reducers
-const reducers = combineReducers({
+export const reducers = combineReducers({
   user,
-  currentProposals,
+  Proposals,
 
 });
 
-export default reducers;
+export type RootState = ReturnType<typeof reducers>;

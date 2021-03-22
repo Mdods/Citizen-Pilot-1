@@ -96,8 +96,14 @@ const news: {}[] = [
       'https://yaleclimateconnections.org/wp-content/uploads/2020/11/1120_iota-sat-nov16_974.jpg',
   },
 ];
-
-const currentProposal: {}[] = [
+interface Proposal {
+  title: string,
+  description: string,
+  location: string,
+  img: string,
+  votes: number
+}
+const currentProposal: Proposal[] = [
   {
     title: 'build more benchs',
     description: 'benchs',

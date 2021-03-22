@@ -28,7 +28,7 @@ function CurrentProposalCard() {
           <CardItem>
             <Left>
               <Button transparent textStyle={{ color: '#87838B' }}>
-                <Text>1,926 stars</Text>
+                <Text>vote space</Text>
               </Button>
             </Left>
           </CardItem>
